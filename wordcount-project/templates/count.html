@@ -1,0 +1,10 @@
+<h1>Count</h1>
+<h2>Your Text:</h2>
+{{fulltext}}
+<h5>There are {{count}} no. of words in Your Text</h5>
+<h3>Word Count</h3>
+{% for word,cnt in worddict %}
+{{word}}<br/>
+{{cnt}}<br/>
+{% endfor %}
+<a href="{% url 'home' %}">Try Agin</a>

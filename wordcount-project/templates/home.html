@@ -1,0 +1,25 @@
+<h1>This is our home page</h1>
+<h2>Word Count</h2>
+<h3>Enter the text in the text area</h3>
+<form action="{% url 'count' %}" >
+
+
+  <textarea cols="40" rows="10" name="fulltext"></textarea>
+
+  <br />
+  <input type="submit" value="Count!"/>
+
+</form>
+<br/>
+<h3>OR</h3>
+<h3>Upload a file</h3>
+<form action="{% url 'countfile' %}" enctype="multipart/form-data" method = "post">
+  {% csrf_token %}
+
+
+  <input type="file" name="myfile">
+  <br /><br />
+  <input type="submit" value="Count!"/>
+
+</form>
+<a href='{% url 'about' %}'>About<a>
