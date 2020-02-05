@@ -11,13 +11,18 @@ def countfile(request):
         file_name=uploadFile.name
         file_size=uploadFile.size
         txt=uploadFile.read().decode('utf-8')
+        nline=0
+
         for word in txt.split():
             if word in worddict:
                 worddict[word] +=1
             else:
                 worddict[word] =1
-        sortedword=sorted(worddict.items(),key=operator.itemgetter(1),reverse=True)
-        return render(request,'countfile.html',{'Text':txt,'FILE_NAME':file_name,'len':len(txt.split()),'worddict':sortedword})
+        # with open(uploadFile,"rb") as fhand:
+        #     for line in fhand:
+        #         nline+=1
+            sortedword=sorted(worddict.items(),key=operator.itemgetter(1),reverse=True)
+        return render(request,'countfile.html',{'Text':txt,'FILE_NAME':file_name,'len':len(txt.split()),'worddict':sortedword,'lines':nline,'test':txt})
 
 
 
