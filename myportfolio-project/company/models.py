@@ -10,3 +10,6 @@ class company(models.Model):
     summary=models.TextField()
     image=models.ImageField(upload_to='images/')
     salary = models.CharField(max_length=12,default=120)
+
+    def __str__(self):
+        return self.company

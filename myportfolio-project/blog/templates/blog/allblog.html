@@ -56,7 +56,7 @@
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link " href="https://twitter.com/kritik_alawat">Twitter <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="{% static 'kritik_mvj_resume.pdf' %}">Resume</a>
-          <a class="nav-item nav-link" href="{% url 'allblog' %}">Blog</a>
+          <a class="nav-item nav-link active" href="{% url 'allblog' %}">Blog</a>
 
         </div>
       </div>
@@ -64,39 +64,22 @@
   </header>
 
   <main role="main">
-
-    <section class="jumbotron text-center">
-      <div class="container">
-        <h1>Hello I am Kritik</h1>
-        <p class="lead text-muted">This is my First django Project, I hope you like it</p>
-        <p>
-          <a href="mailto:kritikalawat@gmail.com" class="btn btn-primary my-2">Email Me</a>
-
-        </p>
-        <img src="{% static 'ME.jpg' %}" height=500 width =300 />
-      </div>
-    </section>
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-          {% for job in jobs.all %}
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="100%" style="padding:0.5em;" src="{{job.image.url}}"> </img>
-              <div class="card-body">
-                <p class="card-text">{{job.title}}</p>
-                <p class="card-text">{{job.company}}</p>
-                <p class="card-text">{{job.duration}}</p>
-                <p class="card-text">{{job.summary}}</p>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
+    <div class="container">
+      <h1 class= "text-center pt-3">Kritik's Blog</h1>
+      <br/>
+      {% for blog in blogs.all %}
+      <a href ="{url 'detail' blog.id_}"><h2>{{blog.title}}</h2></a>
+      {{blog.pub_date_smart}}
+      <br>
+      <img class="img-fluid" src="{{blog.image.url}}" height=200 width = 200 /  >
+      <br>
+      {{blog.summary}}
+      <br/>
+      <br/>
+      {% endfor %}
     </div>
+
+
 
   </main>
 
