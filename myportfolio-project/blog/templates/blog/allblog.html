@@ -63,11 +63,13 @@
     </nav>
   </header>
 
-  <main role="main">
+  <main role="main" style="background-color:#D7D6D9;">
+    <h1 class= "text-center pt-3">Kritik's Blog</h1>
+    <br/>
     <div class="container">
-      <h1 class= "text-center pt-3">Kritik's Blog</h1>
-      <br/>
+
       {% for blog in blogs.all %}
+      <div style="margin:0% 2% 2% 2%; border-radius:20px; padding:1em;" class="bg-light">
       <a href ="{url 'detail' blog.id_}"><h2>{{blog.title}}</h2></a>
       {{blog.pub_date_smart}}
       <br>
@@ -76,6 +78,7 @@
       {{blog.summary}}
       <br/>
       <br/>
+      </div>
       {% endfor %}
     </div>
 
