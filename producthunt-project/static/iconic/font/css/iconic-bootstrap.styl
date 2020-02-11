@@ -1,0 +1,585 @@
+/* Iconic for Bootstrap */
+
+@font-face
+  font-family 'iconic-sm'
+  src url('../fonts/iconic-trial-sm.eot')
+  src url('../fonts/iconic-trial-sm.eot?#iconic-sm') format('embedded-opentype'), url('../fonts/iconic-trial-sm.woff') format('woff'), url('../fonts/iconic-trial-sm.ttf') format('truetype'), url('../fonts/iconic-trial-sm.svg#iconic-sm') format('svg')
+  font-weight normal
+  font-style normal
+
+
+@font-face
+  font-family 'iconic-md'
+  src url('../fonts/iconic-trial-md.eot')
+  src url('../fonts/iconic-trial-md.eot?#iconic-md') format('embedded-opentype'), url('../fonts/iconic-trial-md.woff') format('woff'), url('../fonts/iconic-trial-md.ttf') format('truetype'), url('../fonts/iconic-trial-md.svg#iconic-md') format('svg')
+  font-weight normal
+  font-style normal
+
+
+@font-face
+  font-family 'iconic-lg'
+  src url('../fonts/iconic-trial-lg.eot')
+  src url('../fonts/iconic-trial-lg.eot?#iconic-lg') format('embedded-opentype'), url('../fonts/iconic-trial-lg.woff') format('woff'), url('../fonts/iconic-trial-lg.ttf') format('truetype'), url('../fonts/iconic-trial-lg.svg#iconic-lg') format('svg')
+  font-weight normal
+  font-style normal
+
+
+// Catchall baseclass
+.iconic
+  position relative
+  top 1px
+  display inline-block
+  font-family 'iconic-sm'
+  font-style normal
+  font-weight normal
+  line-height 1
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+  &:before
+    display inline-block
+
+  &:empty:before
+    width 1em
+    text-align center
+    box-sizing content-box
+
+
+  &.iconic-sm:before,
+  &.iconic-md:before,
+  &.iconic-lg:before,
+  &.iconic-icon-sm:before,
+  &.iconic-icon-md:before,
+  &.iconic-icon-lg:before
+    font-weight normal
+    font-style normal
+
+
+  &.iconic-sm:before
+    font-family 'iconic-sm'
+    font-size 16px
+
+
+  &.iconic-md:before
+    font-family 'iconic-md'
+    font-size 32px
+
+
+  &.iconic-lg:before
+    font-family 'iconic-lg'
+    font-size 128px
+
+
+
+  &.iconic-icon-sm:before
+    font-family 'iconic-sm'
+
+
+  &.iconic-icon-md:before
+    font-family 'iconic-md'
+
+
+  &.iconic-icon-lg:before
+    font-family 'iconic-lg'
+
+
+
+  &.iconic-size-sm:before
+    font-size 16px
+
+
+  &.iconic-size-md:before
+    font-size 32px
+
+
+  &.iconic-size-lg:before
+    font-size 128px
+
+
+
+  &.iconic-align-center:before
+    text-align center
+
+
+  &.iconic-align-left:before
+    text-align left
+
+
+  &.iconic-align-right:before
+    text-align right
+
+
+
+  &.iconic-flip-horizontal:before
+    -webkit-transform scale(-1, 1)
+    -ms-transform scale(-1, 1)
+    transform scale(-1, 1)
+
+
+  &.iconic-flip-vertical:before
+    -webkit-transform scale(1, -1)
+    -ms-transform scale(-1, 1)
+    transform scale(1, -1)
+
+
+  &.iconic-flip-horizontal-vertical:before
+    -webkit-transform scale(-1, -1)
+    -ms-transform scale(-1, 1)
+    transform scale(-1, -1)
+
+
+
+
+
+.iconic-arrow-thick-bottom-fill-acute:before {
+  content'\e000'
+}
+
+.iconic-arrow-thick-bottom-fill-angled:before {
+  content'\e001'
+}
+
+.iconic-arrow-thick-bottom-fill-large-acute:before {
+  content'\e002'
+}
+
+.iconic-arrow-thick-bottom-fill-large-angled:before {
+  content'\e003'
+}
+
+.iconic-arrow-thick-bottom-fill-large-oblique:before {
+  content'\e004'
+}
+
+.iconic-arrow-thick-bottom-fill-large:before {
+  content'\e005'
+}
+
+.iconic-arrow-thick-bottom-fill-oblique:before {
+  content'\e006'
+}
+
+.iconic-arrow-thick-bottom-fill:before {
+  content'\e007'
+}
+
+.iconic-arrow-thick-bottom-left-fill-acute:before {
+  content'\e008'
+}
+
+.iconic-arrow-thick-bottom-left-fill-angled:before {
+  content'\e009'
+}
+
+.iconic-arrow-thick-bottom-left-fill-large-acute:before {
+  content'\e00a'
+}
+
+.iconic-arrow-thick-bottom-left-fill-large-angled:before {
+  content'\e00b'
+}
+
+.iconic-arrow-thick-bottom-left-fill-large-oblique:before {
+  content'\e00c'
+}
+
+.iconic-arrow-thick-bottom-left-fill-large:before {
+  content'\e00d'
+}
+
+.iconic-arrow-thick-bottom-left-fill-oblique:before {
+  content'\e00e'
+}
+
+.iconic-arrow-thick-bottom-left-fill:before {
+  content'\e00f'
+}
+
+.iconic-arrow-thick-bottom-left-line-acute:before {
+  content'\e010'
+}
+
+.iconic-arrow-thick-bottom-left-line-large-acute:before {
+  content'\e011'
+}
+
+.iconic-arrow-thick-bottom-left-line-large-oblique:before {
+  content'\e012'
+}
+
+.iconic-arrow-thick-bottom-left-line-large:before {
+  content'\e013'
+}
+
+.iconic-arrow-thick-bottom-left-line-oblique:before {
+  content'\e014'
+}
+
+.iconic-arrow-thick-bottom-left-line:before {
+  content'\e015'
+}
+
+.iconic-arrow-thick-bottom-line-acute:before {
+  content'\e016'
+}
+
+.iconic-arrow-thick-bottom-line-large-acute:before {
+  content'\e017'
+}
+
+.iconic-arrow-thick-bottom-line-large-oblique:before {
+  content'\e018'
+}
+
+.iconic-arrow-thick-bottom-line-large:before {
+  content'\e019'
+}
+
+.iconic-arrow-thick-bottom-line-oblique:before {
+  content'\e01a'
+}
+
+.iconic-arrow-thick-bottom-line:before {
+  content'\e01b'
+}
+
+.iconic-arrow-thick-bottom-right-fill-acute:before {
+  content'\e01c'
+}
+
+.iconic-arrow-thick-bottom-right-fill-angled:before {
+  content'\e01d'
+}
+
+.iconic-arrow-thick-bottom-right-fill-large-acute:before {
+  content'\e01e'
+}
+
+.iconic-arrow-thick-bottom-right-fill-large-angled:before {
+  content'\e01f'
+}
+
+.iconic-arrow-thick-bottom-right-fill-large-oblique:before {
+  content'\e020'
+}
+
+.iconic-arrow-thick-bottom-right-fill-large:before {
+  content'\e021'
+}
+
+.iconic-arrow-thick-bottom-right-fill-oblique:before {
+  content'\e022'
+}
+
+.iconic-arrow-thick-bottom-right-fill:before {
+  content'\e023'
+}
+
+.iconic-arrow-thick-bottom-right-line-acute:before {
+  content'\e024'
+}
+
+.iconic-arrow-thick-bottom-right-line-large-acute:before {
+  content'\e025'
+}
+
+.iconic-arrow-thick-bottom-right-line-large-oblique:before {
+  content'\e026'
+}
+
+.iconic-arrow-thick-bottom-right-line-large:before {
+  content'\e027'
+}
+
+.iconic-arrow-thick-bottom-right-line-oblique:before {
+  content'\e028'
+}
+
+.iconic-arrow-thick-bottom-right-line:before {
+  content'\e029'
+}
+
+.iconic-arrow-thick-left-fill-acute:before {
+  content'\e02a'
+}
+
+.iconic-arrow-thick-left-fill-angled:before {
+  content'\e02b'
+}
+
+.iconic-arrow-thick-left-fill-large-acute:before {
+  content'\e02c'
+}
+
+.iconic-arrow-thick-left-fill-large-angled:before {
+  content'\e02d'
+}
+
+.iconic-arrow-thick-left-fill-large-oblique:before {
+  content'\e02e'
+}
+
+.iconic-arrow-thick-left-fill-large:before {
+  content'\e02f'
+}
+
+.iconic-arrow-thick-left-fill-oblique:before {
+  content'\e030'
+}
+
+.iconic-arrow-thick-left-fill:before {
+  content'\e031'
+}
+
+.iconic-arrow-thick-left-line-acute:before {
+  content'\e032'
+}
+
+.iconic-arrow-thick-left-line-large-acute:before {
+  content'\e033'
+}
+
+.iconic-arrow-thick-left-line-large-oblique:before {
+  content'\e034'
+}
+
+.iconic-arrow-thick-left-line-large:before {
+  content'\e035'
+}
+
+.iconic-arrow-thick-left-line-oblique:before {
+  content'\e036'
+}
+
+.iconic-arrow-thick-left-line:before {
+  content'\e037'
+}
+
+.iconic-arrow-thick-right-fill-acute:before {
+  content'\e038'
+}
+
+.iconic-arrow-thick-right-fill-angled:before {
+  content'\e039'
+}
+
+.iconic-arrow-thick-right-fill-large-acute:before {
+  content'\e03a'
+}
+
+.iconic-arrow-thick-right-fill-large-angled:before {
+  content'\e03b'
+}
+
+.iconic-arrow-thick-right-fill-large-oblique:before {
+  content'\e03c'
+}
+
+.iconic-arrow-thick-right-fill-large:before {
+  content'\e03d'
+}
+
+.iconic-arrow-thick-right-fill-oblique:before {
+  content'\e03e'
+}
+
+.iconic-arrow-thick-right-fill:before {
+  content'\e03f'
+}
+
+.iconic-arrow-thick-right-line-acute:before {
+  content'\e040'
+}
+
+.iconic-arrow-thick-right-line-large-acute:before {
+  content'\e041'
+}
+
+.iconic-arrow-thick-right-line-large-oblique:before {
+  content'\e042'
+}
+
+.iconic-arrow-thick-right-line-large:before {
+  content'\e043'
+}
+
+.iconic-arrow-thick-right-line-oblique:before {
+  content'\e044'
+}
+
+.iconic-arrow-thick-right-line:before {
+  content'\e045'
+}
+
+.iconic-arrow-thick-top-fill-acute:before {
+  content'\e046'
+}
+
+.iconic-arrow-thick-top-fill-angled:before {
+  content'\e047'
+}
+
+.iconic-arrow-thick-top-fill-large-acute:before {
+  content'\e048'
+}
+
+.iconic-arrow-thick-top-fill-large-angled:before {
+  content'\e049'
+}
+
+.iconic-arrow-thick-top-fill-large-oblique:before {
+  content'\e04a'
+}
+
+.iconic-arrow-thick-top-fill-large:before {
+  content'\e04b'
+}
+
+.iconic-arrow-thick-top-fill-oblique:before {
+  content'\e04c'
+}
+
+.iconic-arrow-thick-top-fill:before {
+  content'\e04d'
+}
+
+.iconic-arrow-thick-top-left-fill-acute:before {
+  content'\e04e'
+}
+
+.iconic-arrow-thick-top-left-fill-angled:before {
+  content'\e04f'
+}
+
+.iconic-arrow-thick-top-left-fill-large-acute:before {
+  content'\e050'
+}
+
+.iconic-arrow-thick-top-left-fill-large-angled:before {
+  content'\e051'
+}
+
+.iconic-arrow-thick-top-left-fill-large-oblique:before {
+  content'\e052'
+}
+
+.iconic-arrow-thick-top-left-fill-large:before {
+  content'\e053'
+}
+
+.iconic-arrow-thick-top-left-fill-oblique:before {
+  content'\e054'
+}
+
+.iconic-arrow-thick-top-left-fill:before {
+  content'\e055'
+}
+
+.iconic-arrow-thick-top-left-line-acute:before {
+  content'\e056'
+}
+
+.iconic-arrow-thick-top-left-line-large-acute:before {
+  content'\e057'
+}
+
+.iconic-arrow-thick-top-left-line-large-oblique:before {
+  content'\e058'
+}
+
+.iconic-arrow-thick-top-left-line-large:before {
+  content'\e059'
+}
+
+.iconic-arrow-thick-top-left-line-oblique:before {
+  content'\e05a'
+}
+
+.iconic-arrow-thick-top-left-line:before {
+  content'\e05b'
+}
+
+.iconic-arrow-thick-top-line-acute:before {
+  content'\e05c'
+}
+
+.iconic-arrow-thick-top-line-large-acute:before {
+  content'\e05d'
+}
+
+.iconic-arrow-thick-top-line-large-oblique:before {
+  content'\e05e'
+}
+
+.iconic-arrow-thick-top-line-large:before {
+  content'\e05f'
+}
+
+.iconic-arrow-thick-top-line-oblique:before {
+  content'\e060'
+}
+
+.iconic-arrow-thick-top-line:before {
+  content'\e061'
+}
+
+.iconic-arrow-thick-top-right-fill-acute:before {
+  content'\e062'
+}
+
+.iconic-arrow-thick-top-right-fill-angled:before {
+  content'\e063'
+}
+
+.iconic-arrow-thick-top-right-fill-large-acute:before {
+  content'\e064'
+}
+
+.iconic-arrow-thick-top-right-fill-large-angled:before {
+  content'\e065'
+}
+
+.iconic-arrow-thick-top-right-fill-large-oblique:before {
+  content'\e066'
+}
+
+.iconic-arrow-thick-top-right-fill-large:before {
+  content'\e067'
+}
+
+.iconic-arrow-thick-top-right-fill-oblique:before {
+  content'\e068'
+}
+
+.iconic-arrow-thick-top-right-fill:before {
+  content'\e069'
+}
+
+.iconic-arrow-thick-top-right-line-acute:before {
+  content'\e06a'
+}
+
+.iconic-arrow-thick-top-right-line-large-acute:before {
+  content'\e06b'
+}
+
+.iconic-arrow-thick-top-right-line-large-oblique:before {
+  content'\e06c'
+}
+
+.iconic-arrow-thick-top-right-line-large:before {
+  content'\e06d'
+}
+
+.iconic-arrow-thick-top-right-line-oblique:before {
+  content'\e06e'
+}
+
+.iconic-arrow-thick-top-right-line:before {
+  content'\e06f'
+}
+
+.iconic-nexus:before {
+  content'\e070'
+}
+
