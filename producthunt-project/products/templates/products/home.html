@@ -22,4 +22,14 @@
 </form>
 
 {% endfor %}
+{%if search_result%}
+{%for product in search_result%}
+<br/>
+{{product.titles}}
+{%endfor%}
+{%endif%}
+
+{%if error%}
+{{error}}
+{%endif%}
 {%endblock%}

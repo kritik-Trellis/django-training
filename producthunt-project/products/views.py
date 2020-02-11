@@ -43,3 +43,13 @@ def upvote(request,product_id):
         product.votes_totals +=1
         product.save()
         return redirect('/products/'+str(product.id))
+
+def search(request):
+    product=Product.objects
+    search_text=request.GET['q']
+    status=product.filter(titles__icontains=search_text)
+    if status :
+        return render(request,'products/home.html',{'search_result':status})
+    else:
+        return render(request,'products/home.html',{'error':'Not Found'})
+    
